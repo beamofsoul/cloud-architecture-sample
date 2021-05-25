@@ -1,0 +1,30 @@
+server:
+  port: 8011
+spring:
+  profiles:
+    active: dev
+  application:
+    name: product
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowCredentials: true
+            allowedOriginPatterns: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+        add-to-simple-url-handler-mapping: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    httptrace:
+      enabled: true

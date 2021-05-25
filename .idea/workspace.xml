@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6453101e-4a6e-406e-9d8f-d914012a40d9" name="Default Changelist" comment="base + security + gateway + load balance =&gt; business rpc">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/beamofsoul/cloud/cas/account/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/beamofsoul/cloud/cas/account/AccountApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/beamofsoul/cloud/cas/account/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/beamofsoul/cloud/cas/account/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/beamofsoul/cloud/cas/account/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/META-INF/account.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/Account$AccountBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/AccountApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/AccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/SecurityUser$SecurityUserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/SecurityUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/UserController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/target/classes/com/beamofsoul/cloud/cas/account/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/AuthenticationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/KeyPairController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/OAuth2ServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/ResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/beamofsoul/cloud/cas/authentication/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/resources/jwt.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/AuthenticationApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/KeyPairController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/OAuth2ServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/ResourceServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/SecurityUser$SecurityUserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/SecurityUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/com/beamofsoul/cloud/cas/authentication/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/target/classes/jwt.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/AuthorizationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/IgnoreUrlsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/ResponseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/beamofsoul/cloud/cas/gateway/UserAuthRequestBindingGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/AuthorizationManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/GatewayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/IgnoreUrlsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/ResourceServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/ResponseEntity$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/ResponseEntity$ResponseEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/ResponseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/beamofsoul/cloud/cas/gateway/UserAuthRequestBindingGlobalFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/beamofsoul/cloud/cas/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/beamofsoul/cloud/cas/order/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/beamofsoul/cloud/cas/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/beamofsoul/cloud/cas/product/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="beamofsoul" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/Soft/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="F:\Soft\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1t0xj4vDOkX2T5mha0nXoTRtQnZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15546875" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.beamofsoul.cloud.cas.order" />
+      <recent name="com.beamofsoul.cloud.cas.product" />
+      <recent name="com.beamofsoul.cloud.cas.authentication" />
+      <recent name="com.beamofsoul.cloud.cas.account" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace_IDEA\demo\cloud-architecture-sample\order\src\main\resources" />
+      <recent name="E:\Workspace_IDEA\demo\cloud-architecture-sample\product\src\main\resources" />
+      <recent name="E:\Workspace_IDEA\demo\cloud-architecture-sample\gateway\src\main\java\com\beamofsoul\cloud\cas\gateway" />
+      <recent name="E:\Workspace_IDEA\demo\cloud-architecture-sample\account\src\main\java\com\beamofsoul\cloud\cas\account" />
+      <recent name="E:\Workspace_IDEA\demo\cloud-architecture-sample\authentication\src\main\java\com\beamofsoul\cloud\cas\authentication" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/user/currentUser" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5NDI4OTMsImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6IjQ3NDJlZDY5LWU1OTktNDZmMi05NDk4LWFhNmQ4MGYxOTA5MSIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.lnkQTACnDRzLLn0NgjjAOQefNukfWbSI-b5hfHhkEpAlb8AjmVsXTa6PJCo2YaoqPPTA5lOuDBRqno52Sf-2D7iWHQpupmxJXaCsSzYcypdwPFB84HnOW2IPDlTY91hHdix7QT5yOktfU7pGFen221bAN1cMEuoPxm9EjZKNpa8fOxNmONlxmVvjYrQHLHeoOAnL05Q7w82w_3AoU2SrvZH72YFPAlXTw82citY62K3fzyxwWyZLU2ON7pEEI0dFGOtRNUPQxt7C_kSwlleY0f_fEpxnuHsGI6oZQu9pqv8ELDlvQ6YDjbaOsUbdlwj8SYdYKecPMHv6iVwNQsMSow" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/hello" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5NDI4OTMsImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6IjQ3NDJlZDY5LWU1OTktNDZmMi05NDk4LWFhNmQ4MGYxOTA5MSIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.lnkQTACnDRzLLn0NgjjAOQefNukfWbSI-b5hfHhkEpAlb8AjmVsXTa6PJCo2YaoqPPTA5lOuDBRqno52Sf-2D7iWHQpupmxJXaCsSzYcypdwPFB84HnOW2IPDlTY91hHdix7QT5yOktfU7pGFen221bAN1cMEuoPxm9EjZKNpa8fOxNmONlxmVvjYrQHLHeoOAnL05Q7w82w_3AoU2SrvZH72YFPAlXTw82citY62K3fzyxwWyZLU2ON7pEEI0dFGOtRNUPQxt7C_kSwlleY0f_fEpxnuHsGI6oZQu9pqv8ELDlvQ6YDjbaOsUbdlwj8SYdYKecPMHv6iVwNQsMSow" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8001/authentication/oauth/token" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_id" />
+                <option name="value" value="client-app" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_secret" />
+                <option name="value" value="91297918" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="beamofsoul" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="91297918" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/hello" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5MjgxMzksImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6ImFlZDVlMjBlLWJkYmEtNDdmZC05ODk3LTNmYTEyY2ZlZjNmNiIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.DrMQJD88hgSti5myCliCxXDRpA2hcJQUYG6vxWkTaQ1IurCOvmadOe6UDqtsUp0WIPq-OQ6wXAkOkUX-QoIIKlo8uet5tBoXUKUV2pdIR0Y37mHYwED4mcEn9ilZWJAy4V9EEeOhwY-xQenXb8s2iXBufWkqaovxpiPi3o8MXEVHfVqJDENQXEEWeZUl3G6GqwnLaPsxQWbG5oT3kg4MeFO9RRBriAlVxzUttwBgZhuhRv4x4pEIQLq-wn3j6p93cV472nSMPZEEKO_JvN0_X9j8f02ts-FMWqiXq-_rAFT4m4_YQDdC4WXFJTAlmWRWjYny6RMGy3Im1ee1h2AdeA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/hello" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/user/currentUser" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5MzM5MTcsImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6IjlmZDRkZDUwLTFmZDQtNDU4NC1iOWU5LTYyMGVhZmJmNDNkMyIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.q6eaB-JT88H16D_E32B1jKEU8V4ZDdxVPs-2V4DKV92WdqtzEPeYQD5fQyo1RNR8RmUDGIbN7dDaLMPbH5S7IMw9bEJmn2NlsA3Kbodxz2AjStc_1fQ6Gnryoq5wMI0J2gD7hZbl_I8vWlJUTnp_myBf8FeLhf2I06IV7LS88wVFJpetSrANittxD2OaYsYPUi2-s4zPEg-IMJ9vWwRb2I21CNo9uV_V_sC5R6cfGyOmtgKspqI5_p-mnaHGNu2wxmaFHXr88NZuHiUVeUOkJxWOrXxO6eh9ub4OBOXUmIU2fa5C1kK0qcXW-HBKWKh2ptqcv_ypVOuLzwB9q4bQGA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/user/currentUser" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5MjgxMzksImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6ImFlZDVlMjBlLWJkYmEtNDdmZC05ODk3LTNmYTEyY2ZlZjNmNiIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.DrMQJD88hgSti5myCliCxXDRpA2hcJQUYG6vxWkTaQ1IurCOvmadOe6UDqtsUp0WIPq-OQ6wXAkOkUX-QoIIKlo8uet5tBoXUKUV2pdIR0Y37mHYwED4mcEn9ilZWJAy4V9EEeOhwY-xQenXb8s2iXBufWkqaovxpiPi3o8MXEVHfVqJDENQXEEWeZUl3G6GqwnLaPsxQWbG5oT3kg4MeFO9RRBriAlVxzUttwBgZhuhRv4x4pEIQLq-wn3j6p93cV472nSMPZEEKO_JvN0_X9j8f02ts-FMWqiXq-_rAFT4m4_YQDdC4WXFJTAlmWRWjYny6RMGy3Im1ee1h2AdeA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/user/currentUser" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUi1iJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5MjgxMzksImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6ImFlZDVlMjBlLWJkYmEtNDdmZC05ODk3LTNmYTEyY2ZlZjNmNiIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.DrMQJD88hgSti5myCliCxXDRpA2hcJQUYG6vxWkTaQ1IurCOvmadOe6UDqtsUp0WIPq-OQ6wXAkOkUX-QoIIKlo8uet5tBoXUKUV2pdIR0Y37mHYwED4mcEn9ilZWJAy4V9EEeOhwY-xQenXb8s2iXBufWkqaovxpiPi3o8MXEVHfVqJDENQXEEWeZUl3G6GqwnLaPsxQWbG5oT3kg4MeFO9RRBriAlVxzUttwBgZhuhRv4x4pEIQLq-wn3j6p93cV472nSMPZEEKO_JvN0_X9j8f02ts-FMWqiXq-_rAFT4m4_YQDdC4WXFJTAlmWRWjYny6RMGy3Im1ee1h2AdeA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/user/currentUser" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/hello" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 1eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJiZWFtb2Zzb3VsIiwic2NvcGUiOlsiYWxsIl0sImlkIjoxLCJleHAiOjE2MjE5MjgxMzksImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6ImFlZDVlMjBlLWJkYmEtNDdmZC05ODk3LTNmYTEyY2ZlZjNmNiIsImNsaWVudF9pZCI6ImNsaWVudC1hcHAifQ.DrMQJD88hgSti5myCliCxXDRpA2hcJQUYG6vxWkTaQ1IurCOvmadOe6UDqtsUp0WIPq-OQ6wXAkOkUX-QoIIKlo8uet5tBoXUKUV2pdIR0Y37mHYwED4mcEn9ilZWJAy4V9EEeOhwY-xQenXb8s2iXBufWkqaovxpiPi3o8MXEVHfVqJDENQXEEWeZUl3G6GqwnLaPsxQWbG5oT3kg4MeFO9RRBriAlVxzUttwBgZhuhRv4x4pEIQLq-wn3j6p93cV472nSMPZEEKO_JvN0_X9j8f02ts-FMWqiXq-_rAFT4m4_YQDdC4WXFJTAlmWRWjYny6RMGy3Im1ee1h2AdeA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/account/accounts" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8001/actuator/health" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.cloud-architecture-sample#4">
+    <configuration name="cloud-architecture-sample#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/cloud-architecture-sample.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="cloud-architecture-sample#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/cloud-architecture-sample.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="cloud-architecture-sample#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/cloud-architecture-sample.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beamofsoul.cloud.cas.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.cloud.cas.account.AccountApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="authentication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.cloud.cas.authentication.AuthenticationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.cloud.cas.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.cloud.cas.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.cloud.cas.product.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.cloud-architecture-sample#2" />
+      <item itemvalue="HTTP Request.cloud-architecture-sample#3" />
+      <item itemvalue="HTTP Request.rest-api#2" />
+      <item itemvalue="HTTP Request.cloud-architecture-sample#4" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.AuthenticationApplication" />
+      <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.AccountApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.cloud-architecture-sample#4" />
+        <item itemvalue="HTTP Request.cloud-architecture-sample#2" />
+        <item itemvalue="Spring Boot.AccountApplication" />
+        <item itemvalue="HTTP Request.cloud-architecture-sample#3" />
+        <item itemvalue="HTTP Request.rest-api#2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Justin\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6453101e-4a6e-406e-9d8f-d914012a40d9" name="Default Changelist" comment="" />
+      <created>1621919939398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621919939398</updated>
+      <workItem from="1621919940714" duration="10567000" />
+      <workItem from="1621938071722" duration="1020000" />
+      <workItem from="1621939123997" duration="1167000" />
+      <workItem from="1621940513275" duration="1443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="base + security + gateway + load balance =&gt; business rpc" />
+    <option name="LAST_COMMIT_MESSAGE" value="base + security + gateway + load balance =&gt; business rpc" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="312" y="0" key="#Project_Structure" timestamp="1621940198061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1621940198061" />
+    <state x="410" y="166" width="1117" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621921722416">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="166" width="1117" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621921722416" />
+    <state x="718" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1621931943431">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1621931943431" />
+    <state x="401" y="23" key="CommitChangelistDialog2" timestamp="1621941884365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="401" y="23" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621941884365" />
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1621941279512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621941279512" />
+    <state width="1867" height="234" key="GridCell.Tab.0.bottom" timestamp="1621941884508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621941884508" />
+    <state width="1867" height="234" key="GridCell.Tab.0.center" timestamp="1621941884508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="234" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621941884508" />
+    <state width="1867" height="234" key="GridCell.Tab.0.left" timestamp="1621941884508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="234" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621941884508" />
+    <state width="1867" height="234" key="GridCell.Tab.0.right" timestamp="1621941884508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="234" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621941884508" />
+    <state width="1867" height="413" key="GridCell.Tab.1.bottom" timestamp="1621941286937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="413" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621941286937" />
+    <state width="1867" height="413" key="GridCell.Tab.1.center" timestamp="1621941286937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="413" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621941286937" />
+    <state width="1867" height="413" key="GridCell.Tab.1.left" timestamp="1621941286937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="413" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621941286937" />
+    <state width="1867" height="413" key="GridCell.Tab.1.right" timestamp="1621941286937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="413" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621941286937" />
+    <state width="1867" height="332" key="GridCell.Tab.2.bottom" timestamp="1621940607742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="332" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621940607742" />
+    <state width="1867" height="332" key="GridCell.Tab.2.center" timestamp="1621940607742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="332" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621940607742" />
+    <state width="1867" height="332" key="GridCell.Tab.2.left" timestamp="1621940607742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="332" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621940607742" />
+    <state width="1867" height="332" key="GridCell.Tab.2.right" timestamp="1621940607742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="332" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621940607742" />
+    <state x="312" y="0" key="SettingsEditor" timestamp="1621941239449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621941239449" />
+    <state x="624" y="215" key="extract.method.dialog" timestamp="1621932255128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="215" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621932255128" />
+    <state x="158" y="102" width="1377" height="835" key="new project wizard" timestamp="1621940167921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="158" y="102" width="1377" height="835" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1621940167921" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1621941174848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621941174848" />
+  </component>
+</project>
