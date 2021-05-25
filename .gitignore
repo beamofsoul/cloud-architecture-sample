@@ -1,5 +1,10 @@
-/account/target/
-/gateway/target/
-/authentication/target/
-/order/target/
-/product/target/
+*/target
+*.iml
+*.ipr
+*.iws
+.idea
+*.log
+*.DS_Store
+*.classpath
+*.settings
+*.project
